@@ -1,12 +1,12 @@
 const generateManager = manager =>  {
   return `
-  <div class="">
-      <div class="">
-          <div class="">
+  <div class="card col-3 bg-light shadow p-3 m-3">
+      <div class="card-body">
+          <div class="card-title bg-primary text-white">
               <h3>${manager.name}</h3>
-              <h4>Manager</h4><i class="">content_paste</i>
+              <h4>Manager</h4>
           </div>
-          <div class="">
+          <div class="card">
               <p class="id">ID: ${manager.id}</p>
               <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
               <p class="office">Office Number: ${manager.officeNumber}</p>
@@ -18,13 +18,13 @@ const generateManager = manager =>  {
 
 const generateEngineer = engineer => {
   return `
-  <div class="">
-      <div class="">
-          <div class="">
+  <div class="card col-3 bg-light shadow p-3 m-3">
+      <div class="card-body">
+          <div class="card-title bg-primary text-white">
               <h3>${engineer.name}</h3>
-              <h4>Engineer</h4><i class="">laptop_mac</i>
+              <h4>Engineer</h4>
           </div>
-          <div class="">
+          <div class="card">
               <p class="id">ID: ${engineer.id}</p>
               <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
               <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
@@ -36,15 +36,15 @@ const generateEngineer = engineer => {
 
 const generateIntern = intern => {
   return `
-  <div class="">
-      <div class="">
-          <div class="">
+  <div class="card col-3 bg-light shadow p-3 m-3">
+      <div class="card-body">
+          <div class="card-title bg-primary text-white">
               <h3>${intern.name}</h3>
-              <h4>Intern</h4><i class="">assignment_ind</i>
+              <h4>Intern</h4>
           </div>
-          <div class="">
+          <div class="card">
               <p class="id">ID: ${intern.id}</p>
-              <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
+              <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
               <p class="school">School: ${intern.school}</p>
           </div>
   </div>
@@ -97,17 +97,16 @@ return`
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar" id="navbar">
-            <span class="navbar-brand mb-0 h1 w-100 text-center" id="navbar-text">Team Profile</span>
+        <nav class="navbar bg-danger">
+            <span class="navbar-brand w-100 h-100 text-center text-white">My Team</span>
         </nav>
     </header>
     <main>
         <div class="container">
-            <div class="row justify-content-center" id="team-cards">
+            <div class="row justify-content-center">
                 <!--Team Cards-->
                 ${employeeCards}
             </div>

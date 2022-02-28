@@ -148,7 +148,7 @@ fs.writeFile('./dist/index.html', data, err => {
         console.log(err);
         return; 
     } else {
-        console.log("Team profile has been created! Please check out the index.html in the dist folder")
+        console.log("Team profile has been created! Please check the index.html in the dist folder")
     }
   })
 }; 
