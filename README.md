@@ -22,7 +22,8 @@
 
   After installation, you will type 'node index.js' and this will show the first prompt which is to select thwe role of the employee you want to add. Once you made a selection you will be prompted with different questions regarding the employee. At the end you will be asked if you would like to add more employees if you do input 'y' if not input 'n'. Your generated team profile will be in the 'dist' folder and it will be named 'index.html'.
 
-  
+  Watch this [video](https://youtu.be/AKl9k6tiVms) for a walkthrough on how to use this app.
+
 
   ## Credits
 
